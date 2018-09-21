@@ -25,7 +25,7 @@ local insidePage = xxl.getInsidePage()
 mainPage.login()
 mainPage.closeNotificationWindow()
 
---insidePage.zhengWu()
+insidePage.zhengWu()
 insidePage.ziChan()
 
 
