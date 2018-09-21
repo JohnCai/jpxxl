@@ -2,17 +2,8 @@ local mainPage = {}
 
 function mainPage.login()
 	--尝试10次关掉实名认证
-	local function closeShiMing(count, closed)
-		local loc_count, loc_closed = count + 1, false
-		
-		local x, y = findImageInRegionFuzzy("main_nexttime.png", 95, 0, 0, 719, 1279, 0xffffff);
-		if x ~= -1 then
-			
-			tap(x, y)
-			loc_closed = true;
-			
-		end
-		
+	local function closeShiMing(count)
+		local loc_count, loc_closed = count + 1, clickByImage("main_nexttime.png") 
 		
 		if (loc_count <= 10 and loc_closed == false) then
 			setTimer(2000,closeShiMing,loc_count)
