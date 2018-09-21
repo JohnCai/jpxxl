@@ -12,6 +12,12 @@ local function enterShiYe() --师爷
 end
 
 local function shouCai()
+	x, y = findImageInRegionFuzzy("zhengwu_zhengji.png", 95, 0, 0, 719, 1279, 0xffffff);
+	if x ~= -1  and y ~= -1 then       
+		tap(x,y)
+	else                               --如果没找到符合条件的
+		dialog("没找到 ╮（╯▽╰）╭",0);
+	end
 end
 
 local function exitShiYe()
@@ -19,6 +25,7 @@ end
 
 function insidePage.zhengWu() --政务
 	enterShiYe()
+	mSleep(1000)
 	shouCai()
 	exitShiYe()
 end

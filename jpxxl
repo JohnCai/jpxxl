@@ -473,7 +473,7 @@ err	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/socket.lua
 error(err)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	253;"	f
 error(err)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	86;"	f
 escape(s)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.lua	30;"	f
-exitShiYe	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	17;"	f
+exitShiYe	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	23;"	f
 expand	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	70;"	f
 exponent_part	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	425;"	e
 ext	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	249;"	e
@@ -623,7 +623,7 @@ index	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lu
 index	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	21;"	e
 insidePage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	23;"	e
 insidePage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	1;"	e
-insidePage.zhengWu	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	20;"	f
+insidePage.zhengWu	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	26;"	f
 integer_part	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	406;"	e
 io	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/mime.lua	13;"	e
 ip	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lua	74;"	e
@@ -1353,4 +1353,4 @@ y	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	32;"	e
 y	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	73;"	e
 y	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	23;"	e
 z	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	271;"	e
-zhengWu()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	20;"	f
+zhengWu()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	26;"	f
