@@ -19,5 +19,8 @@ function xxl.getMainPage()
 	return getlib('main', 'xxlPages.mainPage')
 end
 
+function xxl.getInsidePage()
+	return getlib('inside', 'xxlPages.insidePage')
+end
 
 return xxl
