@@ -14,6 +14,7 @@ function mainPage.login()
 	setTimer(1000, closeShiMing, 0)
 	
 	
+	--进入游戏
 	local x, y = -1, -1
 	while x <= -1 do
 		mSleep(500)

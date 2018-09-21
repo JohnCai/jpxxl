@@ -13,9 +13,22 @@ function clickByImage(png)
 	local x, y = findByImage(png)
 	if (x ~= -1) then
 		tap(x, y)
+		mSleep(50)
 		return true
-	end 
+	end
 	
+	return false
+end
+
+function clickByImageWithRetry(png, retry_count, retry_interval)
+	for tmpi=1,retry_count do
+		x, y = findByImage(png)
+		if (x ~= -1) then
+			tap(x, y)
+			return true
+		end
+		mSleep(retry_interval)
+	end
 	return false
 end
 

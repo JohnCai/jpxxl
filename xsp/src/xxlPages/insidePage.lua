@@ -44,17 +44,26 @@ end
 
 
 local function exitShiYe()
+	--clickByImage("")
 end
 
 
 local function enterHuaAn()
-end 
+	mSleep(2000)
+	return clickByImageWithRetry("huaan.png", 5, 2000)
+end
 
-local function shouCai_ZhiChan()
-end 
+local function shouCai_ZiChan()
+	while true do
+		mSleep(1000)
+		if (clickByImage("zichan_jingying.png") == false) then
+			break
+		end
+	end
+end
 
 local function exitHuaAn()
-end 
+end
 
 function insidePage.zhengWu() --政务
 	enterShiYe()
@@ -66,10 +75,16 @@ function insidePage.zhengWu() --政务
 end
 
 function insidePage.ziChan() --资产
-	enterHuaAn()
-	shouCai_ZhiChan()
-	exitHuaAn()
-end 
+	--swip(150,500,500,500)
+	mSleep(500)
+	swip(500,500,250,500)
+	mSleep(500)
+
+	if enterHuaAn() then
+		shouCai_ZiChan()
+		exitHuaAn()
+	end
+end
 
 
 
