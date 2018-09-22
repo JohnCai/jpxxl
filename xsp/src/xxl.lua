@@ -40,4 +40,8 @@ function xxl.getXunfang()
 	return getlib('xunfang', 'xxlPages.xunfang')
 end
 
+function xxl.getLaofang()
+	return getlib('laofang', 'xxlPages.laofang')
+end
+
 return xxl
