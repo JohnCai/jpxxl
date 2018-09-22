@@ -32,4 +32,8 @@ function xxl.getZhengwu()
 	return getlib('zhengwu', 'xxlPages.zhengwu')
 end
 
+function xxl.getShuyuan()
+	return getlib('shuyuan', 'xxlPages.shuyuan')
+end
+
 return xxl

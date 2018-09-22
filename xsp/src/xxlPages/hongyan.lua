@@ -23,16 +23,15 @@ local function get()
 	mSleep(200)
 	
 	--click 一键传唤， 不要click恢复精力
-	--tap(580, 1220) 
+	--tap(580, 1220)
 	x, y = findColor({506, 1197, 646, 1239},
 		"0|0|0xfcf4d3,5|0|0x643e2a,10|0|0xb55b20,17|0|0x8f4c1f",
 		95, 0, 0, 0)
 	if x > -1 then
 		tap(x,y)
+		mSleep(3000)
+		tap(300, 900) --click anywhere to confirm
 	end
-	
-	mSleep(3000)
-	tap(300, 900) --click anywhere to confirm
 end
 
 local function exitHongyan()
