@@ -34,7 +34,7 @@ local function shouCai_ZhengWu(priorityArray)
 				break
 			end
 		end
-		mSleep(1000)
+		mSleep(500)
 		if anyZhengWu == false then
 			break
 		end
@@ -119,13 +119,6 @@ function insidePage.ziChan() --资产
 		exitHuaAn()
 	end
 end
-
-
-
-
-
-
-
 
 
 

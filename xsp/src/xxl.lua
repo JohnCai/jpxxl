@@ -23,4 +23,8 @@ function xxl.getInsidePage()
 	return getlib('inside', 'xxlPages.insidePage')
 end
 
+function xxl.getHongyan()
+	return getlib('hongyan', 'xxlPages.hongyan')
+end
+
 return xxl

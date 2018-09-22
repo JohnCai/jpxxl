@@ -473,12 +473,14 @@ encrypt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.l
 encrypt(key)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	32;"	f
 endS	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	611;"	e
 endsWith	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	483;"	f
+enterHongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	7;"	f
 enterHuaAn	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	52;"	f
 enterShiYe	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	3;"	f
 err	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/socket.lua	32;"	e
 error(err)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	253;"	f
 error(err)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	86;"	f
 escape(s)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.lua	30;"	f
+exitHongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	29;"	f
 exitHuaAn	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	97;"	f
 exitShiYe	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/insidePage.lua	46;"	f
 expand	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	70;"	f
@@ -529,6 +531,9 @@ ftp	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	70;"	e
 full_number_text	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	429;"	e
 g	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	268;"	e
 g	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	106;"	e
+get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	23;"	f
+get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	3;"	f
+getHongyan()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	26;"	f
 getInsidePage()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	22;"	f
 getJSON()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	4;"	f
 getMainPage()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	18;"	f
@@ -589,6 +594,8 @@ highpart	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	315
 highpart	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	324;"	e
 highpart	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	329;"	e
 highpart	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	353;"	e
+hongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	1;"	e
+hongyan.get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	3;"	f
 host	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	212;"	e
 host	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	242;"	e
 http	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	71;"	e
@@ -1359,6 +1366,7 @@ x	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	70;"	e
 x	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	53;"	e
 xxl	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	4;"	e
 xxl	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	1;"	e
+xxl.getHongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	26;"	f
 xxl.getInsidePage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	22;"	f
 xxl.getMainPage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	18;"	f
 y	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	32;"	e

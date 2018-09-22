@@ -27,6 +27,7 @@ mainPage.closeNotificationWindow()
 
 insidePage.zhengWu()
 insidePage.ziChan()
+xxl.getHongyan().get()
 
 
 
