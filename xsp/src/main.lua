@@ -8,6 +8,12 @@ local appId = "com.jpxxl.bingniaozf"
 local runCount = 1
 
 local function RunOnce()
+	local minute = os.date("%M", mTime()/1000)
+	local hour = os.date("%H", mTime()/1000)
+--	if hour == '23' then
+--		sysLog('ok, 23')
+--    end
+
 	sysLogFmt('count=%d', runCount)
 	runCount = runCount + 1
 	
@@ -55,7 +61,7 @@ end
 
 while true do
 	RunOnce()
-	mSleep(5*60*1000)
+	mSleep(60*60*1000) --1 hour
 end
 
 

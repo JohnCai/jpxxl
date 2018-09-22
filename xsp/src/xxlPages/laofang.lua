@@ -38,7 +38,7 @@ local function get()
 	mSleep(2000)
 	checkOneClickBox()
 	for tmpi=1,9 do
-		mSleep(5000)
+		mSleep(3000)
 		jiaoyu()
 		mSleep(5000)
 		confirm()
