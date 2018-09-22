@@ -26,8 +26,9 @@ mainPage.closeNotificationWindow()
 
 xxl.getZhengwu().get()
 
+--slowly move to right side
 for tmpi=1,6 do
-	mSleep(500)
+	mSleep(1000)
 	swip(500,500,400,500)
 end
 
