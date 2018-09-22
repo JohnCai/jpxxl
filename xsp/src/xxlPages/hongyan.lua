@@ -1,8 +1,5 @@
+--红颜
 local hongyan = {}
-
-function hongyan.get()
-	
-end
 
 local function enterHongyan()
 	for tmpi=1,10 do
@@ -21,14 +18,27 @@ local function enterHongyan()
 end
 
 local function get()
+	mSleep(500)
 	tap(176, 1248) --check一键
 	mSleep(200)
-	tap(580, 1220)
+	tap(580, 1220) --click一键
+	mSleep(500)
+	tap(300, 900) --click anywhere to confirm
 end
 
 local function exitHongyan()
 	mSleep(50)
 	tap(669, 28)
+end
+
+function hongyan.get()
+	local entered = enterHongyan()
+	if entered then
+		get()
+		exitHongyan()
+    end
+	
+	return entered
 end
 
 return hongyan

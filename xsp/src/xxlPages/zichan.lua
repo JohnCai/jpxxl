@@ -1,9 +1,9 @@
+--资产
 local zichan = {}
 
 local function enterHuaAn()
-	
-	--	return clickByImageWithRetry("huaan.png", 5, 2000)
-	for tmpi=1,3 do
+
+	for tmpi=1,5 do
 		mSleep(1000)
 		x, y = findColor({0, 0, 719, 1279},
 			"0|0|0x917449,1|0|0xa07c48,2|0|0x9a7848,6|0|0x4c412f,11|2|0x4d4639,15|2|0x444239,12|8|0x464034,-7|9|0x574d3b",
@@ -51,12 +51,7 @@ local function exitHuaAn()
 end
 
 
-function zichan.get() --资产
-	--swip(150,500,500,500)
-	mSleep(500)
-	swip(500,500,250,500)
-	mSleep(500)
-	
+function zichan.get() 
 	if enterHuaAn() then
 		shouCai_ZiChan()
 		exitHuaAn()

@@ -5,9 +5,9 @@ local xxl = require("xxl")
 
 local appId = "com.jpxxl.bingniaozf"
 
-flag = appIsRunning(appId); 
-if flag == 1 then 
-    closeApp(appId) 
+flag = appIsRunning(appId);
+if flag == 1 then
+	closeApp(appId)
 	mSleep(1000)
 end
 
@@ -25,6 +25,12 @@ mainPage.login()
 mainPage.closeNotificationWindow()
 
 xxl.getZhengwu().get()
+
+for tmpi=1,6 do
+	mSleep(500)
+	swip(500,500,400,500)
+end
+
 xxl.getZichan().get()
 xxl.getHongyan().get()
 
