@@ -19,12 +19,16 @@ function xxl.getMainPage()
 	return getlib('main', 'xxlPages.mainPage')
 end
 
-function xxl.getInsidePage()
-	return getlib('inside', 'xxlPages.insidePage')
+function xxl.getZichan()
+	return getlib('zichan', 'xxlPages.zichan')
 end
 
 function xxl.getHongyan()
 	return getlib('hongyan', 'xxlPages.hongyan')
+end
+
+function xxl.getZhengwu()
+	return getlib('zhengwu', 'xxlPages.zhengwu')
 end
 
 return xxl

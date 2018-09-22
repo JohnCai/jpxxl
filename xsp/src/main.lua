@@ -20,13 +20,12 @@ init(appId, 0);
 mSleep(1000)
 
 local mainPage = xxl.getMainPage()
-local insidePage = xxl.getInsidePage()
 
 mainPage.login()
 mainPage.closeNotificationWindow()
 
-insidePage.zhengWu()
-insidePage.ziChan()
+xxl.getZhengwu().get()
+xxl.getZichan().get()
 xxl.getHongyan().get()
 
 
