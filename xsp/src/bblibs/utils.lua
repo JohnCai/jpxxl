@@ -20,18 +20,6 @@ function clickByImage(png)
 	return false
 end
 
-function clickByImageWithRetry(png, retry_count, retry_interval)
-	for tmpi=1,retry_count do
-		x, y = findByImage(png)
-		if (x ~= -1) then
-			tap(x, y)
-			return true
-		end
-		mSleep(retry_interval)
-	end
-	return false
-end
-
 -- 格式化输出
 function sysLogFmt(fmt, ...)
 	sysLog(string.format(fmt, ...))

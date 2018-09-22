@@ -33,14 +33,14 @@ local function shouCai_ZhengWu(priorityArray)
 	while true do
 		local anyZhengWu = false
 		for i, v in ipairs(priorityArray) do
-			mSleep(500)
+			mSleep(1000)
 			
 			if (clickByImage(pngTable[v])) then
 				anyZhengWu = true
 				break
 			end
 		end
-		mSleep(500)
+		mSleep(1000)
 		if anyZhengWu == false then
 			break
 		end

@@ -20,20 +20,20 @@ local function enterHuaAn()
 end
 
 local function shouCai_ZiChan()
-	tap(56, 1219) -- try one-click first
-	mSleep(1000)
-	
 	while true do
 		mSleep(200)
+		--商产
 		x, y = findColor({467, 419, 633, 475},
 			"0|0|0xe5b436,16|2|0xe4b133",
 			95, 0, 0, 0)
 		
 		if x <= -1 then
+			--农产
 			x, y = findColor({468, 763, 627, 809},
 				"0|0|0xe5b436,16|2|0xe4b133",
 				95, 0, 0, 0)
 			if x <= -1 then
+				--士兵
 				x, y = findColor({472, 1107, 629, 1151},
 					"0|0|0xe5b436,16|2|0xe4b133",
 					95, 0, 0, 0)
