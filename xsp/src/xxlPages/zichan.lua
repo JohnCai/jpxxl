@@ -20,8 +20,11 @@ local function enterHuaAn()
 end
 
 local function shouCai_ZiChan()
+	tap(56, 1219) -- try one-click first
+	mSleep(1000)
+	
 	while true do
-		mSleep(1000)
+		mSleep(200)
 		x, y = findColor({467, 419, 633, 475},
 			"0|0|0xe5b436,16|2|0xe4b133",
 			95, 0, 0, 0)

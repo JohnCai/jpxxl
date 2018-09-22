@@ -486,7 +486,7 @@ error(err)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn
 error(err)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	86;"	f
 escape(s)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.lua	30;"	f
 exitHongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	37;"	f
-exitHuaAn	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	48;"	f
+exitHuaAn	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	51;"	f
 exitShiYe	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	16;"	f
 exitShuyuan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	103;"	f
 expand	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	70;"	f
@@ -544,7 +544,7 @@ get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	29;
 get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	42;"	f
 get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	108;"	f
 get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	51;"	f
-get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	54;"	f
+get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	57;"	f
 getHongyan()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	27;"	f
 getJSON()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	4;"	f
 getMainPage()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	19;"	f
@@ -1393,4 +1393,4 @@ z	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	271;"	e
 zhengwu	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	3;"	e
 zhengwu.get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	51;"	f
 zichan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	2;"	e
-zichan.get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	54;"	f
+zichan.get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	57;"	f
