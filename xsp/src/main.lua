@@ -24,16 +24,16 @@ local mainPage = xxl.getMainPage()
 mainPage.login()
 mainPage.closeNotificationWindow()
 
---xxl.getZhengwu().get()
+xxl.getZhengwu().get()
 
-----slowly move to right side
---for tmpi=1,6 do
---	mSleep(1000)
---	swip(500,500,400,500)
---end
+--slowly move to right side
+for tmpi=1,6 do
+	mSleep(1000)
+	swip(500,500,400,500)
+end
 
---xxl.getZichan().get()
---xxl.getHongyan().get()
+xxl.getZichan().get()
+xxl.getHongyan().get()
 
 --出府
 mSleep(500)

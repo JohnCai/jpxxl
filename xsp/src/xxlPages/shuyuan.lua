@@ -27,49 +27,13 @@ local function enterShuyuan()
 end
 
 local function get()
-	mSleep(500)
-	tap(650, 239) --click 一键完成
-	mSleep(5000)
+	--一键完成
+	local function tryFinish()
+		mSleep(500)
+		tap(650, 239) 
+		mSleep(3000)
+	end
 	
-	
-	
-	
-	
-	--	local x1, y1 = 115, 323 --hardcoded, 左上第一个书桌的坐标
-	
-	--	for tmpi=1,10 do
-	--		mSleep(500)
-	--		if tmpi%2 == 1 then
-	--			x1 = 115
-	--		else
-	--			x1 = 115 + 324
-	--		end
-	
-	
-	--		x, y = findColor({x1, y1, x1 + 190, y1 + 30},
-	--			"0|0|0xcbbea8,1|0|0x745b4c,2|0|0x5e4235,3|0|0xbaab96,3|1|0x694e40,2|1|0x331108,1|1|0x422217,0|1|0xc4b7a1",
-	--			95, 0, 0, 0)
-	--		if x > -1 then
-	--			tap(x, y)
-	--			--scroll down
-	--			for tmpi=1,10 do
-	--				mSleep(500)
-	--				swip(300,800,300,600)
-	--			end
-	
-	--			mSleep(500)
-	--			x, y = findColor({0, 0, 719, 1279},
-	--				"0|0|0xba9876,4|0|0x7a553b,6|0|0x6d4830,8|0|0x643f28,12|-1|0xa07d5e,15|-1|0xba9876,17|-1|0xba9876,21|-1|0xba9876",
-	--				95, 0, 0, 0)
-	--			if x > -1 then
-	--				tap(x, y)
-	--			end
-	--		end
-	--		if tmpi%2 == 0 then --目前右边，下一步跳到下一行
-	--			y1 = y1 + 307
-	--		end
-	
-	--	end
 	local function findLeftEmptyTable()
 		return findColor({0, 0, 719, 1279},
 			"0|0|0x583b2f,1|0|0x3d1c12,2|0|0x8c7767,3|0|0xd5cbb5,3|1|0xd6cbb5,2|1|0xb9a996,1|1|0x6f5648,0|1|0x664b3e,0|2|0x7a6354",
@@ -107,6 +71,7 @@ local function get()
 		end
 	end
 	
+	tryFinish()
 	local alreadyScrolledDown = false
 	while true do
 		mSleep(500)
@@ -131,7 +96,6 @@ local function get()
 		
 		tap(x, y)
 		scrollAndChooseMenke()
-		
 	end
 	
 end
