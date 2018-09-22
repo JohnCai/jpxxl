@@ -31,12 +31,65 @@ local function get()
 	tap(650, 239) --click 一键完成
 	mSleep(5000)
 	
-	while true do
-		mSleep(500)
-		emptyTableFound = clickByImage('shuyuan_empty_table.png')
-		if emptyTableFound == false then
-			break
+	
+	
+	
+	
+	--	local x1, y1 = 115, 323 --hardcoded, 左上第一个书桌的坐标
+	
+	--	for tmpi=1,10 do
+	--		mSleep(500)
+	--		if tmpi%2 == 1 then
+	--			x1 = 115
+	--		else
+	--			x1 = 115 + 324
+	--		end
+	
+	
+	--		x, y = findColor({x1, y1, x1 + 190, y1 + 30},
+	--			"0|0|0xcbbea8,1|0|0x745b4c,2|0|0x5e4235,3|0|0xbaab96,3|1|0x694e40,2|1|0x331108,1|1|0x422217,0|1|0xc4b7a1",
+	--			95, 0, 0, 0)
+	--		if x > -1 then
+	--			tap(x, y)
+	--			--scroll down
+	--			for tmpi=1,10 do
+	--				mSleep(500)
+	--				swip(300,800,300,600)
+	--			end
+	
+	--			mSleep(500)
+	--			x, y = findColor({0, 0, 719, 1279},
+	--				"0|0|0xba9876,4|0|0x7a553b,6|0|0x6d4830,8|0|0x643f28,12|-1|0xa07d5e,15|-1|0xba9876,17|-1|0xba9876,21|-1|0xba9876",
+	--				95, 0, 0, 0)
+	--			if x > -1 then
+	--				tap(x, y)
+	--			end
+	--		end
+	--		if tmpi%2 == 0 then --目前右边，下一步跳到下一行
+	--			y1 = y1 + 307
+	--		end
+	
+	--	end
+	local function findLeftEmptyTable()
+		return findColor({0, 0, 719, 1279},
+			"0|0|0x583b2f,1|0|0x3d1c12,2|0|0x8c7767,3|0|0xd5cbb5,3|1|0xd6cbb5,2|1|0xb9a996,1|1|0x6f5648,0|1|0x664b3e,0|2|0x7a6354",
+			95, 0, 0, 0)
+	end
+	
+	local function findRightEmptyTable()
+		return findColor({0, 0, 719, 1279},
+			"0|0|0x331107,1|0|0x5b3f33,2|0|0xae9f8b,3|0|0xd3c9b3,3|1|0xd3c9b2,2|1|0xbfb29d,1|1|0x887262,0|1|0x654a3d,-1|1|0x6b5243",
+			95, 0, 0, 0)
+	end
+	
+	local function scrollDownTable()
+		for tmpi=1,3 do
+			mSleep(500)
+			swip(360,1000,360,800)
 		end
+	end
+	
+	local function scrollAndChooseMenke()
 		mSleep(500)
 		
 		--scroll down
@@ -46,13 +99,39 @@ local function get()
 		end
 		
 		mSleep(500)
-		--clickByImage('shuyuan_send.png')
 		x, y = findColor({0, 0, 719, 1279},
 			"0|0|0xba9876,4|0|0x7a553b,6|0|0x6d4830,8|0|0x643f28,12|-1|0xa07d5e,15|-1|0xba9876,17|-1|0xba9876,21|-1|0xba9876",
 			95, 0, 0, 0)
 		if x > -1 then
 			tap(x, y)
 		end
+	end
+	
+	local alreadyScrolledDown = false
+	while true do
+		mSleep(500)
+		local x, y =  findLeftEmptyTable()
+		if x == -1 then
+			x, y = findRightEmptyTable()
+		end
+		
+		if (x == -1 and alreadyScrolledDown == false)then
+			scrollDownTable()
+			alreadyScrolledDown = true
+			mSleep(1000)
+			x, y = findLeftEmptyTable()
+			if x == -1 then
+				x, y = findRightEmptyTable()
+			end
+		end
+		
+		if x == -1 then
+			break
+		end
+		
+		tap(x, y)
+		scrollAndChooseMenke()
+		
 	end
 	
 end
