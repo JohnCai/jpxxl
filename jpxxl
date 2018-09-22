@@ -234,8 +234,8 @@ align	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	100;"	e
 align	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	56;"	e
 all(src,	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	293;"	f
 alphabet	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	954;"	e
-alreadyScrolledDown	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	75;"	e
-alreadyScrolledDown	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	85;"	e
+alreadyScrolledDown	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	68;"	e
+alreadyScrolledDown	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	78;"	e
 angleBetween(t)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	85;"	f
 anyZhengWu	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	34;"	e
 anyZhengWu	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	39;"	e
@@ -369,6 +369,7 @@ chars	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua
 chars	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	650;"	e
 chars	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	819;"	e
 check(ok)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/tp.lua	49;"	f
+checkOneClickBox	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	22;"	f
 checkstep	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lua	119;"	e
 choose	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/mime.lua	25;"	f
 choose(table)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/socket.lua	58;"	f
@@ -460,6 +461,7 @@ dirty	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/socket.l
 dirty	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/socket.lua	96;"	e
 dirty()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/tp.lua	93;"	f
 distanceBetween(t)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	23;"	f
+doClick	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	27;"	f
 done	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	270;"	e
 done	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/socket.lua	137;"	e
 empty	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	77;"	f
@@ -479,8 +481,10 @@ enterHongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongya
 enterHuaAn	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	4;"	f
 enterShiYe	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	5;"	f
 enterShuyuan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	4;"	f
+enterXunfang	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	4;"	f
 entered	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	43;"	e
-entered	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	109;"	e
+entered	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	102;"	e
+entered	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	50;"	e
 err	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/socket.lua	32;"	e
 error(err)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	253;"	f
 error(err)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	86;"	f
@@ -488,7 +492,8 @@ escape(s)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.
 exitHongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	37;"	f
 exitHuaAn	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	51;"	f
 exitShiYe	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	16;"	f
-exitShuyuan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	103;"	f
+exitShuyuan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	96;"	f
+exitXunfang	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	44;"	f
 expand	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	70;"	f
 exponent_part	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	425;"	e
 ext	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	249;"	e
@@ -515,8 +520,8 @@ filtered	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12
 filtered	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	275;"	e
 find	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	586;"	f
 findByImage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	4;"	f
-findLeftEmptyTable	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	37;"	f
-findRightEmptyTable	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	43;"	f
+findLeftEmptyTable	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	28;"	f
+findRightEmptyTable	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	35;"	f
 firstLetterUpper	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	497;"	f
 first_append	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	870;"	e
 fl	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	4;"	e
@@ -539,9 +544,11 @@ full_number_text	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON
 g	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	268;"	e
 g	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	94;"	e
 get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	20;"	f
-get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	29;"	f
+get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	20;"	f
+get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	21;"	f
 get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	42;"	f
-get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	108;"	f
+get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	101;"	f
+get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	49;"	f
 get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zhengwu.lua	51;"	f
 get()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zichan.lua	57;"	f
 getHongyan()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	27;"	f
@@ -549,6 +556,7 @@ getJSON()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	4;"	f
 getMainPage()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	19;"	f
 getShuyuan()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	35;"	f
 getStrUtils()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	19;"	f
+getXunfang()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	39;"	f
 getZhengwu()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	31;"	f
 getZichan()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	23;"	f
 get_reply	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/tp.lua	27;"	f
@@ -1050,8 +1058,8 @@ s	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	78;"	e
 s	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	79;"	e
 scheme	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lua	219;"	e
 scheme	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	245;"	e
-scrollAndChooseMenke	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	56;"	f
-scrollDownTable	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	49;"	f
+scrollAndChooseMenke	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	49;"	f
+scrollDownTable	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	42;"	f
 second_append	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	873;"	e
 segment_set	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.lua	54;"	e
 select	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	113;"	e
@@ -1089,7 +1097,7 @@ shouCai_ZiChan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/zich
 shouldreceivebody	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	274;"	f
 shouldredirect	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	265;"	f
 shuyuan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	2;"	e
-shuyuan.get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	108;"	f
+shuyuan.get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	101;"	f
 simplify(snk)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	221;"	f
 simplify(src)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ltn12.lua	104;"	f
 sink	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lua	125;"	e
@@ -1332,7 +1340,7 @@ tredirect	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http
 trequest	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	302;"	f
 trim	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	490;"	f
 trim()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	35;"	f
-tryFinish	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	31;"	f
+tryFinish	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/shuyuan.lua	22;"	f
 type	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	111;"	e
 type	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	153;"	e
 type	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	39;"	e
@@ -1380,11 +1388,14 @@ x	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	93;
 x	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	31;"	e
 x	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	70;"	e
 x	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	41;"	e
+xunfang	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	2;"	e
+xunfang.get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/xunfang.lua	49;"	f
 xxl	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	4;"	e
 xxl	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	2;"	e
 xxl.getHongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	27;"	f
 xxl.getMainPage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	19;"	f
 xxl.getShuyuan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	35;"	f
+xxl.getXunfang	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	39;"	f
 xxl.getZhengwu	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	31;"	f
 xxl.getZichan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxl.lua	23;"	f
 y	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	32;"	e

@@ -36,4 +36,8 @@ function xxl.getShuyuan()
 	return getlib('shuyuan', 'xxlPages.shuyuan')
 end
 
+function xxl.getXunfang()
+	return getlib('xunfang', 'xxlPages.xunfang')
+end
+
 return xxl

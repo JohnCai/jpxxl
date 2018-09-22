@@ -28,12 +28,12 @@ local pngTable = {
 
 --e.g. priorityArray = {"yinliang", "zhengji"}
 local function shouCai_ZhengWu(priorityArray)
-	priorityArray[#priorityArray+1] = "zhengji" --fall back to zhengji
+	--priorityArray[#priorityArray+1] = "zhengji" --fall back to zhengji
 	
 	while true do
 		local anyZhengWu = false
 		for i, v in ipairs(priorityArray) do
-			mSleep(1000)
+			mSleep(500)
 			
 			if (clickByImage(pngTable[v])) then
 				anyZhengWu = true

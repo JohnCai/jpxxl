@@ -46,6 +46,8 @@ local function RunOnce()
 	mSleep(500)
 	
 	xxl.getShuyuan().get()
+	mSleep(500)
+	xxl.getXunfang().get()
 	
 end
 
