@@ -7,36 +7,37 @@ local appId = "com.jpxxl.bingniaozf"
 
 local runCount = 1
 
-if frontAppName() ~= appId then 
-    dialog("请打开九品小县令再运行该脚本！", 5);
-    mSleep(3000); 
-    lua_exit();
+if appIsRunning(appId) == 0 then
+	runApp(appId)
+	mSleep(500)
 end
+
+if frontAppName() ~= appId then
+	dialog("请打开九品小县令再运行该脚本！", 5);
+	mSleep(3000);
+	lua_exit();
+end
+
+init(appId, 0);
+mSleep(1000)
+
+local mainPage = xxl.getMainPage()
+mainPage.logout()
+lua_exit();
 
 local function RunOnce()
 	local minute = os.date("%M", mTime()/1000)
 	local hour = os.date("%H", mTime()/1000)
---	if hour == '23' then
---		sysLog('ok, 23')
---    end
-
+	--	if hour == '23' then
+	--		sysLog('ok, 23')
+	--    end
+	
 	sysLogFmt('count=%d', runCount)
 	runCount = runCount + 1
-	
-	if appIsRunning(appId) == 1 then
-		closeApp(appId)
-		mSleep(1000)
-	end
-	
-	runApp(appId)
-	
-	mSleep (200)
 	
 	init(appId, 0);
 	
 	mSleep(1000)
-	
-	local mainPage = xxl.getMainPage()
 	
 	mainPage.login()
 	mainPage.closeNotificationWindow()
@@ -53,9 +54,7 @@ local function RunOnce()
 	xxl.getHongyan().get()
 	
 	--出府
-	mSleep(500)
-	tap(666, 30)
-	mSleep(500)
+	mainPage.goOutside()
 	
 	xxl.getShuyuan().get()
 	mSleep(500)

@@ -1,5 +1,46 @@
 local mainPage = {}
 
+
+
+function mainPage.setting()
+	mSleep(50)
+	tap(69, 1019)
+	mSleep(50)
+end
+
+function mainPage.isInside()
+	for tmpi=1,3 do
+		mSleep(500)
+		x, y = findByImage('nav_chufu.png')
+		if x ~= -1 then
+			return true
+		end
+	end
+end
+
+--出府
+function mainPage.goOutside()
+	mSleep(500)
+	tap(666, 30)
+	mSleep(500)
+end
+
+function mainPage.isOutside()
+	for tmpi=1,3 do
+		mSleep(500)
+		x, y = findByImage('nav_huifu.png')
+		if x ~= -1 then
+			return true
+		end
+	end
+end
+
+function mainPage.switch()
+	mSleep(500)
+	tap(520,638)
+	mSleep(500)
+end
+
 function mainPage.logout()
 	local function switchAccount()
 		x, y = findColor({14, 1125, 160, 1237},
@@ -7,9 +48,25 @@ function mainPage.logout()
 			95, 0, 0, 0)
 		if x > -1 then
 			tap(x, y)
+			mSleep(500)
+			return true
 		end
+		return false
 	end
+	
+	if mainPage.isInside() then
+		mainPage.goOutside()
+	end
+	if mainPage.isOutside() then
+		mainPage.setting()
+		mainPage.switch()
+	end
+	
+	mSleep(1000)
+	return switchAccount()
+	
 end
+
 
 function mainPage.login()
 	--尝试10次关掉实名认证
