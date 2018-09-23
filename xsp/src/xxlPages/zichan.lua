@@ -21,7 +21,7 @@ end
 
 local function shouCai_ZiChan()
 	while true do
-		mSleep(200)
+		mSleep(500)
 		--商产
 		x, y = findColor({467, 419, 633, 475},
 			"0|0|0xe5b436,16|2|0xe4b133",
