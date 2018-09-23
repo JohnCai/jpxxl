@@ -67,8 +67,31 @@ function mainPage.logout()
 	
 end
 
+function mainPage.login(username, pwd)
+	touchDown(1,369,618); 
+	mSleep(50)
+	touchUp(1,369,618);
+	mSleep(1000);
+	inputText("#CLEAR#") 
+	mSleep(1000);
+	inputText(username)
+	
+	
+	mSleep(1000)
+	touchDown(1,369,690); 
+	mSleep(50)
+	touchUp(1,369,690);
+	mSleep(1000);
+	inputText("#CLEAR#") 
+	mSleep(1000);
+	inputText(pwd)
+	
+	mSleep(1000)
+	tap(369, 760)
+	
+end
 
-function mainPage.login()
+function mainPage.enter()
 	--尝试10次关掉实名认证
 	local function closeShiMing(count)
 		local loc_count, loc_closed = count + 1, clickByImage("main_nexttime.png")

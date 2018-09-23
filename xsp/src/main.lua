@@ -23,6 +23,7 @@ mSleep(1000)
 
 local mainPage = xxl.getMainPage()
 mainPage.logout()
+mainPage.login("1010797424", "yuwan123")
 lua_exit();
 
 local function RunOnce()
