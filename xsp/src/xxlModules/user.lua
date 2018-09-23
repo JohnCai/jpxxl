@@ -1,39 +1,7 @@
-local mainPage = {}
+local user = {}
 
-
-
-function setting()
-	mSleep(50)
-	tap(69, 1019)
-	mSleep(50)
-end
-
-function isInside()
-	for tmpi=1,3 do
-		mSleep(500)
-		x, y = findByImage('nav_chufu.png')
-		if x ~= -1 then
-			return true
-		end
-	end
-end
-
---出府
-function goOutside()
-	mSleep(500)
-	tap(666, 30)
-	mSleep(500)
-end
-
-function isOutside()
-	for tmpi=1,3 do
-		mSleep(500)
-		x, y = findByImage('nav_huifu.png')
-		if x ~= -1 then
-			return true
-		end
-	end
-end
+local xxl = require("xxl")
+local pagenav = xxl.getPagenav()
 
 function switch()
 	mSleep(500)
@@ -54,15 +22,11 @@ function logout()
 		return false
 	end
 	
-	if isInside() then
-		goOutside()
-	end
-	if isOutside() then
-		setting()
+	if pagenav.goSetting() then
 		switch()
-	end
+		mSleep(2000)
+    end
 	
-	mSleep(2000)
 	return switchAccount()
 	
 end
@@ -131,11 +95,11 @@ function closeNotificationWindow()
 	end
 end
 
-function mainPage.enterGame(username, pwd)
+function user.enterGame(username, pwd)
 	logout()
 	login(username, pwd)
 	enterMainPage()
 	closeNotificationWindow()
 end
 
-return mainPage
+return user

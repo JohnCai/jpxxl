@@ -16,32 +16,36 @@ local function getlib(flag, name)
 	return xxl[flag]
 end
 
-function xxl.getMainPage()
-	return getlib('main', 'xxlPages.mainPage')
+function xxl.getUser()
+	return getlib('user', 'xxlModules.user')
 end
 
 function xxl.getZichan()
-	return getlib('zichan', 'xxlPages.zichan')
+	return getlib('zichan', 'xxlModules.zichan')
 end
 
 function xxl.getHongyan()
-	return getlib('hongyan', 'xxlPages.hongyan')
+	return getlib('hongyan', 'xxlModules.hongyan')
 end
 
 function xxl.getZhengwu()
-	return getlib('zhengwu', 'xxlPages.zhengwu')
+	return getlib('zhengwu', 'xxlModules.zhengwu')
 end
 
 function xxl.getShuyuan()
-	return getlib('shuyuan', 'xxlPages.shuyuan')
+	return getlib('shuyuan', 'xxlModules.shuyuan')
 end
 
 function xxl.getXunfang()
-	return getlib('xunfang', 'xxlPages.xunfang')
+	return getlib('xunfang', 'xxlModules.xunfang')
 end
 
 function xxl.getLaofang()
-	return getlib('laofang', 'xxlPages.laofang')
+	return getlib('laofang', 'xxlModules.laofang')
 end
+
+function xxl.getPagenav()
+	return getlib('pagenav', 'xxlModules.pagenav')
+end 
 
 return xxl

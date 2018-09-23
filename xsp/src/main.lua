@@ -33,8 +33,7 @@ local function runUser(username, pwd)
 	sysLogFmt('count=%d', runCount)
 	runCount = runCount + 1
 	
-	local mainPage = xxl.getMainPage()
-	mainPage.enterGame(username, pwd)
+	xxl.getUser().enterGame(username, pwd)
 
 	mSleep(500)
 	xxl.getZhengwu().get()
@@ -48,14 +47,14 @@ local function runUser(username, pwd)
 	xxl.getZichan().get()
 	xxl.getHongyan().get()
 	
-	--出府
-	mainPage.goOutside()
+	local pagenav = xxl.getPagenav()
+	pagenav.goOutside()
 	
 	xxl.getShuyuan().get()
 	mSleep(500)
 	xxl.getXunfang().get()
 	mSleep(500)
-	xxl.getLaofang().get()
+	--xxl.getLaofang().get()
 	
 end
 
