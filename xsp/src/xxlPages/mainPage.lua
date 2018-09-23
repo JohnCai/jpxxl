@@ -62,27 +62,27 @@ function logout()
 		switch()
 	end
 	
-	mSleep(1000)
+	mSleep(2000)
 	return switchAccount()
 	
 end
 
 function login(username, pwd)
-	touchDown(1,369,618); 
+	touchDown(1,369,618);
 	mSleep(50)
 	touchUp(1,369,618);
 	mSleep(1000);
-	inputText("#CLEAR#") 
+	inputText("#CLEAR#")
 	mSleep(1000);
 	inputText(username)
 	
 	
 	mSleep(1000)
-	touchDown(1,369,690); 
+	touchDown(1,369,690);
 	mSleep(50)
 	touchUp(1,369,690);
 	mSleep(1000);
-	inputText("#CLEAR#") 
+	inputText("#CLEAR#")
 	mSleep(1000);
 	inputText(pwd)
 	
@@ -119,14 +119,16 @@ end
 function closeNotificationWindow()
 	--关掉活动通知
 	local x, y = -1, -1
-	while x <= -1 do
+	for tmpi=1,10 do
 		mSleep(500)
 		x, y = findColor({0, 0, 719, 1279},
 			"0|0|0xfee34b,9|-11|0xdac341,4|2|0xfee34b,-7|3|0xfee34b,-8|-8|0xfce14a",
 			95, 0, 0, 0)
+		if x ~= -1 then
+			tap(x,y)
+			break
+		end
 	end
-	
-	tap(x,y)
 end
 
 function mainPage.enterGame(username, pwd)
