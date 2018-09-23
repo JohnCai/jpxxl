@@ -21,11 +21,9 @@ end
 init(appId, 0);
 mSleep(1000)
 
-local mainPage = xxl.getMainPage()
-mainPage.enterGame("1010797424", "yuwan123")
-lua_exit();
 
-local function RunOnce()
+
+local function runUser(username, pwd)
 	local minute = os.date("%M", mTime()/1000)
 	local hour = os.date("%H", mTime()/1000)
 	--	if hour == '23' then
@@ -35,13 +33,10 @@ local function RunOnce()
 	sysLogFmt('count=%d', runCount)
 	runCount = runCount + 1
 	
-	init(appId, 0);
-	
-	mSleep(1000)
-	
-	mainPage.login()
-	mainPage.closeNotificationWindow()
-	
+	local mainPage = xxl.getMainPage()
+	mainPage.enterGame(username, pwd)
+
+	mSleep(500)
 	xxl.getZhengwu().get()
 	
 	--slowly move to right side
@@ -65,8 +60,8 @@ local function RunOnce()
 end
 
 while true do
-	RunOnce()
-	mSleep(60*60*1000) --1 hour
+	runUser("1010797424", "yuwan123")
+	mSleep(5*60*1000) 
 end
 
 
