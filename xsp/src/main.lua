@@ -7,6 +7,12 @@ local appId = "com.jpxxl.bingniaozf"
 
 local runCount = 1
 
+if frontAppName() ~= appId then 
+    dialog("请打开九品小县令再运行该脚本！", 5);
+    mSleep(3000); 
+    lua_exit();
+end
+
 local function RunOnce()
 	local minute = os.date("%M", mTime()/1000)
 	local hour = os.date("%H", mTime()/1000)

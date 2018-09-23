@@ -1,9 +1,20 @@
 local mainPage = {}
 
+function mainPage.logout()
+	local function switchAccount()
+		x, y = findColor({14, 1125, 160, 1237},
+			"0|0|0xa88860,3|1|0xdcbe80,3|3|0xe2c482,0|5|0xe2c483,0|5|0xe2c483,5|11|0x3d1a1d,3|13|0x5d3a2f,0|13|0x5d3a2f,-2|8|0xb18f5e",
+			95, 0, 0, 0)
+		if x > -1 then
+			tap(x, y)
+		end
+	end
+end
+
 function mainPage.login()
 	--尝试10次关掉实名认证
 	local function closeShiMing(count)
-		local loc_count, loc_closed = count + 1, clickByImage("main_nexttime.png") 
+		local loc_count, loc_closed = count + 1, clickByImage("main_nexttime.png")
 		
 		if (loc_count <= 10 and loc_closed == false) then
 			setTimer(2000,closeShiMing,loc_count)

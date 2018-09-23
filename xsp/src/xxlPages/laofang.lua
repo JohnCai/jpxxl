@@ -37,7 +37,7 @@ local function get()
 	confirm()
 	mSleep(2000)
 	checkOneClickBox()
-	for tmpi=1,9 do
+	for tmpi=1,9 do --todo
 		mSleep(3000)
 		jiaoyu()
 		mSleep(5000)

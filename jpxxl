@@ -79,7 +79,7 @@ RadioGroup:setSelect	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/
 RootView	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	205;"	e
 RootView:addView	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	221;"	f
 RootView:create	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/UI.lua	215;"	f
-RunOnce	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	10;"	f
+RunOnce	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	16;"	f
 SHA1	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	865;"	f
 T	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	856;"	e
 TT	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	893;"	e
@@ -392,8 +392,8 @@ close()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lu
 close()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	179;"	f
 close()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	73;"	f
 close()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/tp.lua	108;"	f
-closeNotificationWindow()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	28;"	f
-closeShiMing	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	5;"	f
+closeNotificationWindow()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	39;"	f
+closeShiMing	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	16;"	f
 cmd	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/tp.lua	68;"	e
 cmdt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lua	268;"	e
 cmpColor	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	77;"	f
@@ -627,7 +627,7 @@ hongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua
 hongyan.get	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/hongyan.lua	42;"	f
 host	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	212;"	e
 host	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	242;"	e
-hour	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	12;"	e
+hour	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	18;"	e
 http	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	71;"	e
 i	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	413;"	e
 i	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	420;"	e
@@ -728,9 +728,10 @@ loadpos()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	64;"	f
 loaduilib()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	58;"	f
 loadutilslib()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	61;"	f
 lockscreen	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	82;"	e
-login()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	3;"	f
+login()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	14;"	f
 login(user,	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lua	57;"	f
 login(user,	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	77;"	f
+logout()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	3;"	f
 lower	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	213;"	e
 lower	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	129;"	e
 lower	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	224;"	e
@@ -747,10 +748,11 @@ ltn12	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/mime.lua
 ltn12	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	17;"	e
 ltn12	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/tp.lua	13;"	e
 mail(from)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	50;"	f
-mainPage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	33;"	e
+mainPage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	39;"	e
 mainPage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	1;"	e
-mainPage.closeNotificationWindow	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	28;"	f
-mainPage.login	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	3;"	f
+mainPage.closeNotificationWindow	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	39;"	f
+mainPage.login	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	14;"	f
+mainPage.logout	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	3;"	f
 make_set	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.lua	44;"	f
 map	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	776;"	e
 math	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lua	13;"	e
@@ -827,7 +829,7 @@ midpart	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/JSON.lua	330;
 mime	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	13;"	e
 mime	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/mime.lua	12;"	e
 mime	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	19;"	e
-minute	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	11;"	e
+minute	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	17;"	e
 mode	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	141;"	e
 mode	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	166;"	e
 move	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/pos.lua	57;"	f
@@ -1058,7 +1060,7 @@ rslt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	
 rslt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	291;"	e
 rslt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	325;"	e
 rslt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	328;"	e
-runCount	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	18;"	e
+runCount	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	24;"	e
 runCount	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/main.lua	8;"	e
 s	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	100;"	e
 s	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	362;"	e
@@ -1279,6 +1281,7 @@ sum(s)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	379;"	
 sumhexa(s)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	354;"	f
 swap	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/md5.lua	233;"	e
 swip	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	50;"	f
+switchAccount	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlPages/mainPage.lua	4;"	f
 sysLogFmt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	24;"	f
 sysLogLst	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	29;"	f
 t	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	27;"	e
