@@ -2,13 +2,13 @@ local mainPage = {}
 
 
 
-function mainPage.setting()
+function setting()
 	mSleep(50)
 	tap(69, 1019)
 	mSleep(50)
 end
 
-function mainPage.isInside()
+function isInside()
 	for tmpi=1,3 do
 		mSleep(500)
 		x, y = findByImage('nav_chufu.png')
@@ -19,13 +19,13 @@ function mainPage.isInside()
 end
 
 --出府
-function mainPage.goOutside()
+function goOutside()
 	mSleep(500)
 	tap(666, 30)
 	mSleep(500)
 end
 
-function mainPage.isOutside()
+function isOutside()
 	for tmpi=1,3 do
 		mSleep(500)
 		x, y = findByImage('nav_huifu.png')
@@ -35,13 +35,13 @@ function mainPage.isOutside()
 	end
 end
 
-function mainPage.switch()
+function switch()
 	mSleep(500)
 	tap(520,638)
 	mSleep(500)
 end
 
-function mainPage.logout()
+function logout()
 	local function switchAccount()
 		x, y = findColor({14, 1125, 160, 1237},
 			"0|0|0xa88860,3|1|0xdcbe80,3|3|0xe2c482,0|5|0xe2c483,0|5|0xe2c483,5|11|0x3d1a1d,3|13|0x5d3a2f,0|13|0x5d3a2f,-2|8|0xb18f5e",
@@ -54,12 +54,12 @@ function mainPage.logout()
 		return false
 	end
 	
-	if mainPage.isInside() then
-		mainPage.goOutside()
+	if isInside() then
+		goOutside()
 	end
-	if mainPage.isOutside() then
-		mainPage.setting()
-		mainPage.switch()
+	if isOutside() then
+		setting()
+		switch()
 	end
 	
 	mSleep(1000)
@@ -67,7 +67,7 @@ function mainPage.logout()
 	
 end
 
-function mainPage.login(username, pwd)
+function login(username, pwd)
 	touchDown(1,369,618); 
 	mSleep(50)
 	touchUp(1,369,618);
@@ -91,7 +91,7 @@ function mainPage.login(username, pwd)
 	
 end
 
-function mainPage.enter()
+function enterMainPage()
 	--尝试10次关掉实名认证
 	local function closeShiMing(count)
 		local loc_count, loc_closed = count + 1, clickByImage("main_nexttime.png")
@@ -116,7 +116,7 @@ function mainPage.enter()
 	tap(x, y)
 end
 
-function mainPage.closeNotificationWindow()
+function closeNotificationWindow()
 	--关掉活动通知
 	local x, y = -1, -1
 	while x <= -1 do
@@ -127,6 +127,13 @@ function mainPage.closeNotificationWindow()
 	end
 	
 	tap(x,y)
+end
+
+function mainPage.enterGame(username, pwd)
+	logout()
+	login(username, pwd)
+	enterMainPage()
+	closeNotificationWindow()
 end
 
 return mainPage
