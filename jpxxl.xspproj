@@ -6,6 +6,8 @@ size=0
 10\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/shuyuan_empty_table.png
 11\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/nav_chufu.png
 12\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/nav_huifu.png
+13\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/login.png
+14\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/closeNotification.png
 2\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/zhengwu_zhengji.png
 3\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/main_nexttime.png
 4\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/huaan.png
@@ -14,7 +16,7 @@ size=0
 7\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/zhengwu_liangshi.png
 8\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/zhengwu_shuxing.png
 9\RESFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/res/shuyuan.png
-size=12
+size=14
 
 [SOURCE]
 1\SOURCEFILE=/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua

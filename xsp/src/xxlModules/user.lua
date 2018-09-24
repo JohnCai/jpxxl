@@ -37,9 +37,10 @@ function login(username, pwd)
 	for tmpi=1,10 do
 		sysLogFmt('Waiting for login button %d times...', tmpi)
 		mSleep(1000)
-		x, y = findColor({153, 730, 563, 797},
-			"0|0|0x08b75a,2|0|0xffffff,4|0|0x19bc66,3|1|0x26c06e",
-			90, 0, 0, 0)
+		--		x, y = findColor({153, 730, 563, 797},
+		--			"0|0|0x08b75a,2|0|0xffffff,4|0|0x19bc66,3|1|0x26c06e",
+		--			90, 0, 0, 0)
+		x, y = findByImage('login.png')
 		if x ~= -1 then
 			break
 		end
@@ -108,9 +109,10 @@ function closeNotificationWindow()
 		--		x, y = findColor({0, 0, 719, 1279},
 		--			"0|0|0xfee34b,9|-11|0xdac341,4|2|0xfee34b,-7|3|0xfee34b,-8|-8|0xfce14a",
 		--			95, 0, 0, 0)
-		x, y = findColor({609,266,710,326},
-			"0|0|0xfee34b,3|-1|0xfee34b,5|-1|0xd5be3f,8|-2|0x6e5920,9|-2|0x2a1608",
-			90, 0, 0, 0)
+		--		x, y = findColor({609,266,710,326},
+		--			"0|0|0xfee34b,3|-1|0xfee34b,5|-1|0xd5be3f,8|-2|0x6e5920,9|-2|0x2a1608",
+		--			90, 0, 0, 0)
+		x, y = findByImage('closeNotification.png')
 		if x ~= -1 then
 			tap(x,y)
 			break

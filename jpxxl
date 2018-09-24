@@ -391,8 +391,8 @@ close()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lu
 close()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/http.lua	179;"	f
 close()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/smtp.lua	73;"	f
 close()	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/tp.lua	108;"	f
-closeNotificationWindow	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	103;"	f
-closeShiMing	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	80;"	f
+closeNotificationWindow	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	104;"	f
+closeShiMing	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	81;"	f
 cmd	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/tp.lua	68;"	e
 cmdt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/ftp.lua	268;"	e
 cmpColor	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/utils.lua	77;"	f
@@ -478,11 +478,11 @@ encrypt	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.l
 encrypt(key)	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/badboy.lua	32;"	f
 endS	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	611;"	e
 endsWith	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	483;"	f
-enterGame(username,	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	121;"	f
+enterGame(username,	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	123;"	f
 enterHongyan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/hongyan.lua	4;"	f
 enterHuaAn	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/zichan.lua	4;"	f
 enterLaofang	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/laofang.lua	4;"	f
-enterMainPage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	78;"	f
+enterMainPage	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	79;"	f
 enterShiYe	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/zhengwu.lua	5;"	f
 enterShuyuan	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/shuyuan.lua	4;"	f
 enterXunfang	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/xunfang.lua	4;"	f
@@ -1404,7 +1404,7 @@ urlEncode	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI
 usedNums	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	654;"	e
 usedNums	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/StrUtilsAPI.lua	663;"	e
 user	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	1;"	e
-user.enterGame	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	121;"	f
+user.enterGame	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/xxlModules/user.lua	123;"	f
 userinfo	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.lua	169;"	e
 userinfo	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.lua	171;"	e
 userinfo	/Users/JohnCai/Documents/xspworkspace/jpxxl/xsp/src/bblibs/socket/url.lua	197;"	e
