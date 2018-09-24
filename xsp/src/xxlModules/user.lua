@@ -34,12 +34,22 @@ end
 function login(username, pwd)
 	local x, y = -1, -1
 	-- wait for login button
-	while x == -1 do
+	for tmpi=1,10 do
+		sysLogFmt('Waiting for login button %d times...', tmpi)
 		mSleep(1000)
-		x, y = findColor({0, 0, 719, 1279},
+		x, y = findColor({153, 730, 563, 797},
 			"0|0|0x08b75a,2|0|0xffffff,4|0|0x19bc66,3|1|0x26c06e",
 			90, 0, 0, 0)
+		if x ~= -1 then
+			break
+		end
 	end
+	
+	if x == -1 then
+		sysLog('could not find login button, hardcode here...')
+		x, y  = 365, 766 --hardcode login button
+	end
+	
 	mSleep(500)
 	touchDown(1,369,618);
 	mSleep(50)
@@ -58,6 +68,7 @@ function login(username, pwd)
 	inputText("#CLEAR#")
 	mSleep(1000);
 	inputText(pwd)
+	
 	
 	mSleep(1000)
 	tap(x, y)
@@ -97,7 +108,7 @@ function closeNotificationWindow()
 		--		x, y = findColor({0, 0, 719, 1279},
 		--			"0|0|0xfee34b,9|-11|0xdac341,4|2|0xfee34b,-7|3|0xfee34b,-8|-8|0xfce14a",
 		--			95, 0, 0, 0)
-		x, y = findColor({0, 0, 719, 1279},
+		x, y = findColor({609,266,710,326},
 			"0|0|0xfee34b,3|-1|0xfee34b,5|-1|0xd5be3f,8|-2|0x6e5920,9|-2|0x2a1608",
 			90, 0, 0, 0)
 		if x ~= -1 then
