@@ -1,7 +1,16 @@
 
 local bb = require("badboy")
+local json = bb.getJSON()
 bb.loadutilslib()
 local xxl = require("xxl")
+
+local ret, results = showUI("ui.json")
+if (ret == 0) then
+	lua_exit()
+end
+
+--local uiconfigs
+
 
 local appId = "com.jpxxl.bingniaozf"
 
@@ -59,7 +68,16 @@ local function runUser(username, pwd)
 end
 
 while true do
-	runUser("1010797424", "yuwan123")
+	for tmpi=1,10 do
+		username = results[string.format("username%d",tmpi)]
+		password = results[string.format("password%d",tmpi)]
+		ignoremenke  = results[string.format("ignoremenke%d",tmpi)]
+		if (username ~= nil and password ~= nil and string.len(username) > 0 and string.len(password) > 0) then
+			runUser(username, password)
+			mSleep(2000)
+        end
+    end
+	
 	mSleep(5*60*1000) 
 end
 

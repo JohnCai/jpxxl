@@ -21,18 +21,18 @@ local function get()
 	--一键完成
 	local function tryFinish()
 		mSleep(500)
-		tap(650, 239) 
+		tap(650, 239)
 		mSleep(3000)
 	end
 	
-	local function findLeftEmptyTable()
+	local function findRightEmptyTable()
 		mSleep(200)
 		return findColor({0, 0, 719, 1279},
-			"0|0|0x583b2f,1|0|0x3d1c12,2|0|0x8c7767,3|0|0xd5cbb5,3|1|0xd6cbb5,2|1|0xb9a996,1|1|0x6f5648,0|1|0x664b3e,0|2|0x7a6354",
-			95, 0, 0, 0)
+			"0|0|0x6e5445,1|0|0x6e5446,1|3|0x6e5446,-1|4|0x664b3d,0|4|0x412117,3|2|0x64493c,4|2|0xb5a793,-4|1|0xd1c6b0,-6|-5|0x735a4b",
+			90, 0, 0, 0)
 	end
 	
-	local function findRightEmptyTable()
+	local function findLeftEmptyTable()
 		mSleep(200)
 		return findColor({0, 0, 719, 1279},
 			"0|0|0x331107,1|0|0x5b3f33,2|0|0xae9f8b,3|0|0xd3c9b3,3|1|0xd3c9b2,2|1|0xbfb29d,1|1|0x887262,0|1|0x654a3d,-1|1|0x6b5243",
