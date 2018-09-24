@@ -31,10 +31,13 @@ local function get()
 			95, 0, 0, 0)
 		if x > -1 then
 			tap(x, y)
+			sysLogFmt('一键寻访%d次', 1)
 			mSleep(3000)
+		else
+			sysLogFmt('一键寻访%d次', 0)
 		end
 	end
-
+	
 	
 	checkOneClickBox()
 	doClick()

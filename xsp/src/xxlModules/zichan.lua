@@ -20,6 +20,7 @@ local function enterHuaAn()
 end
 
 local function shouCai_ZiChan()
+	local loc_count = 0
 	while true do
 		mSleep(500)
 		--商产
@@ -43,9 +44,12 @@ local function shouCai_ZiChan()
 		if (x <= -1) then
 			break
 		else
+			loc_count = loc_count + 1
 			tap(x,y)
 		end
 	end
+	
+	sysLogFmt('资产收菜%d次', loc_count)
 end
 
 local function exitHuaAn()

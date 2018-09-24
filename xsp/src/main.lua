@@ -33,17 +33,16 @@ mSleep(1000)
 
 
 local function runUser(username, pwd)
-	local minute = os.date("%M", mTime()/1000)
-	local hour = os.date("%H", mTime()/1000)
-	--	if hour == '23' then
-	--		sysLog('ok, 23')
-	--    end
+	--	local minute = os.date("%M", mTime()/1000)
+	--	local hour = os.date("%H", mTime()/1000)
+	--	sysLog(tonumber(minute))
+	--	sysLog(tonumber(hour))
 	
-	sysLogFmt('count=%d', runCount)
+	sysLogFmt('运行次数：%d', runCount)
 	runCount = runCount + 1
 	
 	xxl.getUser().enterGame(username, pwd)
-
+	
 	mSleep(500)
 	xxl.getZhengwu().get()
 	
@@ -67,18 +66,19 @@ local function runUser(username, pwd)
 	
 end
 
+setSysConfig("isLogFile","1")
 while true do
-	for tmpi=1,10 do
+	for tmpi=1,2 do
 		username = results[string.format("username%d",tmpi)]
 		password = results[string.format("password%d",tmpi)]
 		ignoremenke  = results[string.format("ignoremenke%d",tmpi)]
 		if (username ~= nil and password ~= nil and string.len(username) > 0 and string.len(password) > 0) then
 			runUser(username, password)
 			mSleep(2000)
-        end
-    end
+		end
+	end
 	
-	mSleep(5*60*1000) 
+	mSleep(60*60*1000)
 end
 
 

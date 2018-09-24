@@ -30,12 +30,14 @@ local pngTable = {
 local function shouCai_ZhengWu(priorityArray)
 	--priorityArray[#priorityArray+1] = "zhengji" --fall back to zhengji
 	
+	local loc_count = 0
 	while true do
 		local anyZhengWu = false
 		for i, v in ipairs(priorityArray) do
 			mSleep(500)
 			
 			if (clickByImage(pngTable[v])) then
+				loc_count = loc_count + 1
 				anyZhengWu = true
 				break
 			end
@@ -45,6 +47,7 @@ local function shouCai_ZhengWu(priorityArray)
 			break
 		end
 	end
+	sysLogFmt('政务收菜%d次', loc_count)
 end
 
 

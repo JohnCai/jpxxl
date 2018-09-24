@@ -65,6 +65,7 @@ local function get()
 	end
 	
 	tryFinish()
+	local loc_count = 0
 	local alreadyScrolledDown = false
 	while true do
 		mSleep(500)
@@ -73,7 +74,7 @@ local function get()
 			x, y = findRightEmptyTable()
 		end
 		
-		if (x == -1 and alreadyScrolledDown == false)then
+		if (x == -1 and alreadyScrolledDown == false) then
 			scrollDownTable()
 			alreadyScrolledDown = true
 			mSleep(1000)
@@ -89,8 +90,10 @@ local function get()
 		
 		tap(x, y)
 		scrollAndChooseMenke()
+		loc_count = loc_count + 1
 	end
 	
+	sysLogFmt('书院派遣%d个门客', loc_count)
 end
 
 local function exitShuyuan()

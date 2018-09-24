@@ -31,6 +31,9 @@ local function get()
 		tap(x,y)
 		mSleep(3000)
 		tap(300, 900) --click anywhere to confirm
+		sysLog('红颜一键传唤1次')
+	else
+		sysLog('红颜一键传唤0次')
 	end
 end
 
