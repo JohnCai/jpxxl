@@ -37,10 +37,10 @@ function login(username, pwd)
 	for tmpi=1,10 do
 		sysLogFmt('Waiting for login button %d times...', tmpi)
 		mSleep(1000)
-		--		x, y = findColor({153, 730, 563, 797},
-		--			"0|0|0x08b75a,2|0|0xffffff,4|0|0x19bc66,3|1|0x26c06e",
-		--			90, 0, 0, 0)
-		x, y = findByImage('login.png')
+		x, y = findColor({153, 730, 563, 797},
+			"0|0|0x08b75a,2|0|0xffffff,4|0|0x19bc66,3|1|0x26c06e",
+			90, 0, 0, 0)
+		--x, y = findByImage('login.png')
 		if x ~= -1 then
 			break
 		end
